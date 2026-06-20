@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee House 智能点餐 | 精品自提 · 啡同凡响</title>
+    <!-- 引入高颜值 Tailwind CSS 框架 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .brand-bg { background-color: #432818; }
+        .brand-text { color: #432818; }
+        .brand-border { border-color: #432818; }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased text-gray-800">
+
+    <!-- 顶部大图 Hero 区域 -->
+    <header class="brand-bg text-white py-20 px-6 text-center shadow-lg relative overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-10 pointer-events-none"></div>
+        <div class="max-w-3xl mx-auto relative z-10">
+            <!-- 像素级复现：圆角 Logo 展示区 -->
+            <div class="w-24 h-24 bg-white rounded-2xl mx-auto mb-6 flex items-center justify-center shadow-md">
+                <span class="text-3xl font-extrabold brand-text">CH</span>
+            </div>
+            <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl mb-4">Coffee House</h1>
+            <p class="text-lg sm:text-xl text-gray-200 font-light mb-6">—— 智能自提点餐 App，您的校园口袋咖啡馆 ——</p>
+            <div class="inline-block bg-white text-yellow-950 font-bold px-6 py-2 rounded-full shadow-sm text-sm">
+                高校全栈开发软件工程电子作品
+            </div>
+        </div>
+    </header>
+
+    <!-- 主体内容区 -->
+    <main class="max-w-4xl mx-auto px-4 py-12 space-y-16">
+
+        <!-- 1. 应用简介 -->
+        <section class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+            <div class="flex items-center space-x-3 mb-6">
+                <span class="text-2xl">📱</span>
+                <h2 class="text-2xl font-bold text-gray-900 border-l-4 brand-border pl-3">应用简介</h2>
+            </div>
+            <p class="text-gray-600 leading-relaxed text-base">
+                “Coffee House 智能点餐”是一款专为校园及周边社区打造的移动端 O2O 咖啡自提点餐 App。本应用前端基于原生 Android SDK（Java + XML）架构与现代化的 MVVM 设计模式进行构建，后端依托 Spring Boot 提供高性能的 RESTful 服务。我们打通了商品陈列、自适应购物车、订单流转以及与微信开放平台的高好物分享等全流程，旨在为用户提供最丝滑、敏捷且具现代商业水准的口袋点餐体验。
+            </p>
+        </section>
+
+        <!-- 2. 核心功能 -->
+        <section class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+            <div class="flex items-center space-x-3 mb-8">
+                <span class="text-2xl">✨</span>
+                <h2 class="text-2xl font-bold text-gray-900 border-l-4 brand-border pl-3">核心功能</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- 模块 1 -->
+                <div class="p-6 bg-gray-50 rounded-xl border border-gray-100">
+                    <h3 class="font-bold text-lg text-gray-900 mb-2 flex items-center">
+                        <span class="mr-2">☕</span> 经典商品陈列
+                    </h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        基于高颜值 TabLayout 滑动选项卡与高性能 RecyclerView，支持按分类（全部/咖啡/冷饮/甜点）动态异步拉取最新饮品，界面极简白底，优雅且清晰。
+                    </p>
+                </div>
+                <!-- 模块 2 -->
+                <div class="p-6 bg-gray-50 rounded-xl border border-gray-100">
+                    <h3 class="font-bold text-lg text-gray-900 mb-2 flex items-center">
+                        <span class="mr-2">🛒</span> 自适应加购组件
+                    </h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        支持首页快捷一键加购（+1）与购物车内点击数字弹窗深度修改。通过本地 SP 进行持久化，并与后端数据库实时全异步通信，确保多端总价完全一致。
+                    </p>
+                </div>
+                <!-- 模块 3 -->
+                <div class="p-6 bg-gray-50 rounded-xl border border-gray-100">
+                    <h3 class="font-bold text-lg text-gray-900 mb-2 flex items-center">
+                        <span class="mr-2">📝</span> 独立自提结算表单
+                    </h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        具备到店自提、模拟收银台支付交互、支持客制化备注（如多糖少冰）。下单成功后自动落库减库存，并在本地基于哈希算法反显专属取餐自提号（如 A-140）。
+                    </p>
+                </div>
+                <!-- 模块 4 -->
+                <div class="p-6 bg-gray-50 rounded-xl border border-gray-100">
+                    <h3 class="font-bold text-lg text-gray-900 mb-2 flex items-center">
+                        <span class="mr-2">🔗</span> 微信 SDK 级好物分享
+                    </h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        深度集成微信开放平台 Open SDK，在订单详情页一键调起微信选择好友分享，自动拼接当前购买单品大图与描述，具备完美的无微信降级预览机制。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 应用截图示意 -->
+        <section class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+            <div class="flex items-center space-x-3 mb-6">
+                <span class="text-2xl">📸</span>
+                <h2 class="text-2xl font-bold text-gray-900 border-l-4 brand-border pl-3">应用截图示意</h2>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+                <div class="p-4 bg-gray-100 rounded-xl border border-dashed border-gray-300">
+                    <div class="text-gray-400 py-12">首页饮品浏览</div>
+                </div>
+                <div class="p-4 bg-gray-100 rounded-xl border border-dashed border-gray-300">
+                    <div class="text-gray-400 py-12">自适应购物车</div>
+                </div>
+                <div class="p-4 bg-gray-100 rounded-xl border border-dashed border-gray-300">
+                    <div class="text-gray-400 py-12">到店自提号详情</div>
+                </div>
+            </div>
+            <p class="text-xs text-gray-400 mt-4 text-center">* 以上为应用交互示意框架，实际显示效果以模拟器/真机发布版本为准。</p>
+        </section>
+
+        <!-- 4. 用户协议与隐私政策 -->
+        <section class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+            <div class="flex items-center space-x-3 mb-6">
+                <span class="text-2xl">📜</span>
+                <h2 class="text-2xl font-bold text-gray-900 border-l-4 brand-border pl-3">用户协议 &amp; 隐私政策</h2>
+            </div>
+            <div class="space-y-4 text-sm text-gray-600 leading-relaxed">
+                <p>
+                    <strong>用户协议概要：</strong> Coffee House 承诺提供的所有饮品价格与库存数据均与实体店保持高精度的一致。用户在使用在线下单时应完全遵守服务端的规则，不得恶意囤单或超大并发恶意刷新。
+                </p>
+                <p>
+                    <strong>隐私政策声明：</strong> 本应用极其注重您的个人信息安全，我们不会主动向任何第三方泄露您的账户昵称与绑定的手机号。App 接入的微信分享功能仅遵循腾讯官方标准 SDK 数据格式，不会读取您的微信私密社交关系，不关联您的任何用户设备标识符。
+                </p>
+            </div>
+        </section>
+
+        <!-- 5. 联系方式及版权 -->
+        <section class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 text-sm space-y-3">
+            <p><strong>开发者：</strong> Coffee House 项目组</p>
+            <p><strong>联系邮箱：</strong> <a href="mailto:jks_support@jxufe.edu.cn" class="text-blue-600 underline">jks_support@jxufe.edu.cn</a></p>
+            <p><strong>项目开源地址：</strong> <a href="https://github.com/a128zs-svg/cafeorder" target="_blank" class="text-blue-600 underline">https://github.com/a128zs-svg/cafeorder</a></p>
+            <p class="text-xs text-gray-400"><strong>备案说明：</strong> 本网站为“Coffee House 智能自提点餐 APP”官方介绍单页，托管于 GitHub Pages，无商业化营利行为。</p>
+            <p class="text-gray-400 pt-3 border-t border-gray-100 text-center">&copy; 2026 Coffee House 研发团队 | 保留所有权利</p>
+        </section>
+
+    </main>
+
+</body>
+</html>
